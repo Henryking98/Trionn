@@ -47,6 +47,28 @@ const workSans = localFont({
     ],
     variable: '--font-work-sans',
 })
+
+const dmMono = localFont({
+  src: [
+    {
+      path: './fonts/DMMono-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './fonts/DMMono-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/DMMono-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-dmmono',
+});
+
 export const metadata: Metadata = {
   title: "TRIONN | Crafting Award-Winning Digital Journeys.",
   description: "Trionn® - Redefining Digital Creativity: Your Partner for UI/UX, Mobile App, Web App, Branding, Creative Website Design, and Custom Development.",
@@ -60,7 +82,7 @@ export default function RootLayout({
   return (
       <html lang="en">
           <body
-            className={workSans.variable}
+            className={`${workSans.variable} ${dmMono.variable}`}
           >
             {children}
           </body>

@@ -23,7 +23,6 @@ const Header = () => {
                         className="w-full h-full"
                     />
                 </div>
-                <div className="tr__header__right"></div>
             </div>
             <div className="h-0 mx-auto flex items-center justify-between absolute top-14 sm:top-10 px-8 xl:px-24 md:px-12 lg:px-16 w-full">
                 <div className="flex items-center">
@@ -39,13 +38,13 @@ const Header = () => {
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="flex items-center">
-                        <span className="pr-3 text-xs mt-3 cursor-pointer">Menu</span>
+                        <span className="pr-3 text-xs md:text-base uppercase mt-3 cursor-pointer">Menu</span>
                         <Link 
                             href="/"
-                            className="bg-[hsla(222,6%,67%,0.2)] relative flex h-16 w-16 wrap items-center justify-end rounded-full pr-4 md:min-h-9 md:w-9 md:pr-2"
+                            className="bg-[hsla(222,6%,67%,0.2)] relative flex h-16 w-16 flex-wrap items-center justify-end rounded-full pr-4 transition-all md:h-9 md:w-9 md:pr-2"
                         >
                             <span className="leading-4 text-xs bg-[#e0eeee] -mt-1.5 w-2/4 absolute block h-0.5 transition-all"></span>
-                            <span className="leading-4 text-xs mt-1.5 w-1/3 bg-white"></span>
+                            <span className="leading-4 text-xs mt-1.5 w-1/3 bg-white absolute block h-0.5 transition-all"></span>
                         </Link>
                     </div>
                 </div>

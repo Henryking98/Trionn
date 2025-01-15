@@ -4,7 +4,7 @@
 
 @layer base {
   * {
-    @apply scroll-smooth;
+    @apply scroll-smooth m-0 p-0;
   }
 
   body {
@@ -13,6 +13,10 @@
   
   img {
     @apply will-change-transform;
+  }
+  
+  span {
+    @apply font-dmmono;
   }
 
   /* Remove scrollbar */
@@ -439,20 +443,9 @@
     @apply bg-brand text-white shadow-drop-2 !important;
   }
 
-  /* Sort */
-  .sort-select {
-    @apply shad-no-focus h-11 w-full rounded-[8px] border-transparent bg-white !shadow-sm sm:w-[210px] !important;
-  }
-  .sort-select-content {
-    @apply !shadow-drop-3 !important;
-  }
-
-  /* Thumbnail */
-  .thumbnail {
-    @apply flex-center size-[50px] min-w-[50px] overflow-hidden rounded-full bg-brand/10;
-  }
-  .thumbnail-image {
-    @apply size-full object-cover object-center !important;
+  /*cursor */
+  .tr__cursor {
+    @apply z-50 pointer-events-none fixed top-0 left-0 hidden h-5 w-5 rounded-full bg-[#c5fcfc] mix-blend-difference lg:block
   }
 }
 
@@ -460,7 +453,4 @@
   * {
     @apply border-border;
   }
-  /* body {
-    @apply bg-background text-foreground;
-  } */
 }
