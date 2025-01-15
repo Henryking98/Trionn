@@ -101,7 +101,7 @@
 @layer utilities {
   /* ===== TYPOGRAPHY */
   .h1 {
-    @apply text-[34px] leading-[42px] font-bold;
+    @apply text-7xl lg:text-8xl font-dmmono font-[500] uppercase leading-[-8px];
   }
   .h2 {
     @apply text-[24px] leading-[36px] font-bold;
@@ -445,7 +445,7 @@
 
   /*cursor */
   .tr__cursor {
-    @apply z-50 pointer-events-none fixed top-0 left-0 hidden h-5 w-5 rounded-full bg-[#c5fcfc] mix-blend-difference lg:block
+    @apply z-50 pointer-events-none fixed top-0 left-0 hidden h-5 w-5 rounded-full bg-[#c5fcfc] mix-blend-difference lg:block;
   }
 }
 
