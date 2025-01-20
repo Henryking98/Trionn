@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   * {
     @apply scroll-smooth m-0 p-0;
@@ -15,9 +16,22 @@
     @apply will-change-transform;
   }
   
-  span {
-    @apply font-dmmono;
+  h1 {
+    @apply text-[7.7rem] text-center tracking-[-2px] leading-[5.8rem] font-dirtyline;
   }
+  
+  p {
+    @apply text-2xl mt-4 mb-4 text-center px-1 leading-[.9] font-worksans
+  }
+  
+  span {
+    @apply lowercase;
+  }
+  
+  ::selection {
+    color: #c5fcfc;
+    background: transparent;
+}
 
   /* Remove scrollbar */
   .remove-scrollbar::-webkit-scrollbar {
@@ -40,9 +54,6 @@
     background: transparent;
   }
 
-  .recharts-responsive-container {
-    height: initial !important;
-  }
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -100,9 +111,7 @@
 
 @layer utilities {
   /* ===== TYPOGRAPHY */
-  .h1 {
-    @apply text-7xl lg:text-8xl font-dmmono font-[500] uppercase leading-[-8px];
-  }
+  
   .h2 {
     @apply text-[24px] leading-[36px] font-bold;
   }
@@ -445,7 +454,7 @@
 
   /*cursor */
   .tr__cursor {
-    @apply z-50 pointer-events-none fixed top-0 left-0 hidden h-5 w-5 rounded-full bg-[#c5fcfc] mix-blend-difference lg:block;
+    @apply z-[9999] pointer-events-none fixed top-0 left-0 hidden h-5 w-5 rounded-full bg-[#c5fcfc] mix-blend-difference lg:block transform translate-x-[-50%] translate-y-[-50%] origin-center;
   }
 }
 

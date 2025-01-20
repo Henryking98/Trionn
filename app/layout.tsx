@@ -69,6 +69,17 @@ const dmMono = localFont({
   variable: '--font-dmmono',
 });
 
+const dirtyline = localFont({
+  src: [
+    {
+      path: './fonts/Dirtyline36daysoftype2022.otf',
+      style: 'normal',
+      weight: '400',
+    },
+  ],
+  variable: '--font-dirtyline',
+});
+
 export const metadata: Metadata = {
   title: "TRIONN | Crafting Award-Winning Digital Journeys.",
   description: "Trionn® - Redefining Digital Creativity: Your Partner for UI/UX, Mobile App, Web App, Branding, Creative Website Design, and Custom Development.",
@@ -82,7 +93,7 @@ export default function RootLayout({
   return (
       <html lang="en">
           <body
-            className={`${workSans.variable} ${dmMono.variable}`}
+            className={`${workSans.variable} ${dmMono.variable} ${dirtyline.variable}`}
           >
             {children}
           </body>

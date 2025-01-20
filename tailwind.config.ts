@@ -74,6 +74,7 @@ const config: Config = {
             fontFamily: {
                 worksans: ['var(--font-work-sans)', 'sans-serif'],
                 dmmono: ['var(--font-dmmono)', 'cursive'], 
+                dirtyline: ['var(--font-dirtyline)', 'sans-serif'], 
             },
             boxShadow: {
                 "drop-1": "0px 10px 30px 0px rgba(66, 71, 97, 0.1)",

@@ -8,21 +8,25 @@ export const useHoverEffects = () => {
     const hoverables = document.querySelectorAll('.tr__cursor__hoverable');
 
     const handleMouseEnter = () => {
-      gsap.to('.tr__cursor', {
-        width: '80px',
-        height: '80px',
-        filter: 'blur(10px)',
-        duration: 0.3,
-      });
+        if(window.innerWidth > 1024) {
+            gsap.to(".tr__cursor", {
+              width: "80px",
+              height: "80px",
+              filter: "blur(10px)",
+              duration: 0.3,
+            });
+        }
     };
 
     const handleMouseLeave = () => {
-      gsap.to('.tr__cursor', {
-        width: '20px',
-        height: '20px',
-        filter: 'blur(0px)',
-        duration: 0.3,
-      });
+        if(window.innerWidth > 1024) {
+            gsap.to(".tr__cursor", {
+              width: "20px",
+              height: "20px",
+              filter: "blur(0px)",
+              duration: 0.3,
+            });
+        }
     };
 
     hoverables.forEach((element) => {
